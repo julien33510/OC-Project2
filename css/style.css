@@ -1,33 +1,106 @@
 body{
     font-family: 'Raleway', sans-serif;
-    margin: 0px;
-    
+    max-width: 1400px;
+    margin: auto;
 }
 
-header
+header {
+}
+
+nav
 {
     display:flex;
     justify-content:space-between;
-    height: 126px;
+    align-items: center;
+    height: 100px;
+    padding: 0 20px;
 }
 
 #logo_booki 
 {
     width: auto;
-    height: 19px;
-    padding-top: 44px;
-    padding-left: 55px;
+
 }
 
-.nav-bar
-{
-    display: flex;
-    /* padding-right: 2px;*/
+nav img {
+    height: 20px;
 }
 
-.nav-bar > li
+
+nav a
 {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 67px;
+    text-decoration: none;
+    color: black;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 38.5px;
+
 }
+
+
+
+nav a:hover {
+    color: #0065FC;
+    border-top: 2px #0065FC solid;
+}
+
+main {
+    padding: 0 20px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 2.35rem;
+    margin-top: 50px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+.ensembleBoutonDeRecherche {
+    display: flex;
+   
+}
+
+.iconeLocation {
+    background-color: #F2F2F2;
+    padding: 25px;
+    border-radius: 15px 0 0 15px;
+}
+
+form {
+    margin: 0;
+}
+
+form input {
+    height: 51px;
+    border: 1px  #F2F2F2 solid;
+    padding-left: 10px;
+}
+
+form p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.5em;
+    
+}
+
+.iconeSearch {
+    padding: 15px;
+    border-radius: 0 15px 15px 0;
+    color: white;
+    background-color: #0065FC;
+    font-weight: 700;
+}
+
+.iconeSearch i {
+    display: none;
+}
+
+
