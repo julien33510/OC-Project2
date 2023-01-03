@@ -9,11 +9,7 @@ button, input, select, textarea {
     font-size   : 100%;
   }
 
-header {
-}
-
-nav
-{
+nav {
     display:flex;
     justify-content:space-between;
     align-items: center;
@@ -55,7 +51,7 @@ main {
 
 h1 {
     font-weight: 800;
-    font-size: 2.35rem;
+    font-size: 1.75rem;
     margin-top: 50px;
     margin-bottom: 8px;
 }
@@ -70,17 +66,19 @@ h2 {
 
 .iconeLocation {
     background-color: #F2F2F2;
-    padding: 25px;
+    padding: 18px;
     border-radius: 15px 0 0 15px;
+    height: 55px;
 }
 
 form {
     margin: 0;
     display: flex;
+    align-items: center;
 }
 
 form input {
-    height: 51px;
+    height: 55px;
     border: 1px  #F2F2F2 solid;
     padding-left: 10px;
 }
@@ -91,6 +89,10 @@ form p {
     font-size: 1.5em;
     
 }
+
+form .iconeSearch {
+    border: 1px #0065FC solid;
+} 
 
 .iconeSearch {
     padding: 15px;
@@ -158,4 +160,66 @@ form p {
     justify-content: center;
     align-items: center;
     padding-top: 3px;
+}
+
+.sectionHebergement {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.herbergementMarseille {
+    background-color:#F2F2F2;
+    height: 625px;
+    width: 880px;
+    border-radius: 20px;
+}
+
+.lesPlusPopulaires {
+    background-color: aquamarine;
+    height: 625px;
+    width: 420px;
+    border-radius: 20px;
+}
+
+.herbergementMarseille p {
+    margin: 40px;
+    font-weight: 800;
+    font-size: 1.75rem;
+}
+
+.containerCards {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    background-color: white;
+    width:26%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin:30px;
+
+}
+
+.card img {
+    width: 100%;
+}
+
+.contentCard {
+    padding: 10px;
+}
+
+.contentCard h3 {
+    font-size: 1.05rem;
+    margin: 0;
+    font-weight: 800;
+}
+
+.contentCard p {
+    font-size: 1rem;
+    margin:0;
+    font-weight: 100;
+
 }
