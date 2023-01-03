@@ -4,6 +4,11 @@ body{
     margin: auto;
 }
 
+button, input, select, textarea {
+    font-family : inherit;
+    font-size   : 100%;
+  }
+
 header {
 }
 
@@ -97,10 +102,15 @@ form p {
     color: white;
     background-color: #0065FC;
     font-weight: 700;
+    border: none;
 }
 
-.iconeSearch i {
+.iconeSearchMobile {
     display: none;
+}
+
+.iconeSearchDesktop {
+    display: flex;
 }
 
 
