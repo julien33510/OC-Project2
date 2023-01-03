@@ -110,3 +110,24 @@ form p {
 }
 
 
+.sectionFiltres {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+.filtre {
+    margin-left: 20px;
+    padding: 20px 30px;
+    border: 2px #F2F2F2 solid;
+    border-radius: 50px;
+}
+
+.filtre:hover{
+    background-color: #DEEBFF;
+}
+
+.iconeBlue {
+    color: #0065FC;
+}
