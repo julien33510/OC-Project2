@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/2589f96d4f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -24,20 +24,21 @@
 
     <main>
         <section> <!--Formulaire de recherche-->
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <h2>En plein centre-ville ou en pleine nature</h2>
+            <h1 class="titre1">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <h2 class="titre2">En plein centre-ville ou en pleine nature</h2>
             <!--Ensemble bouton de recherche-->
             <form method="get" action="">
                 <div class="iconeLocation"><i class="fa-solid fa-location-dot fa-lg"></i></div>
                 <p>
-                    <input type="text" name="lieuRecherche" id="lieuRecherche" size="30" maxlength="20" value="Marseille, France">
+                    <input type="text" name="lieuRecherche" id="lieuRecherche" size="30" maxlength="20" value="Marseille, France" class="fontSearch">
                 </p>
                 <div class="iconeSearch iconeSearchMobile"><i class="fa-solid fa-magnifying-glass"></i></div>
-                <input type="submit" value="Rechercher" class="iconeSearch iconeSearchDesktop">
+                <input type="submit" value="Rechercher" class="iconeSearch iconeSearchDesktop fontSearch">
+            
             </form>
         </section>
         <section> <!--Filtres-->
-            <div class="sectionFiltres">
+            <div class="sectionFiltres fontFiltre">
                 <p>Filtres</p>
                 <div class="filtre">
                     <i class="fa-sharp fa-solid fa-money-bill-wave iconeBlue"></i>
@@ -56,7 +57,7 @@
                     Animaux autorisés
                 </div>
             </div>
-            <div class="infoDiv">
+            <div class="infoDiv titre2">
                 <div class="infoCadreIcone">
                     <i class="fa-sharp fa-solid fa-info iconeBlue"></i>
                 </div>
@@ -66,97 +67,203 @@
 
         <section class="sectionHebergement"> <!--Cartes hébergements-->
             <div class="herbergementMarseille"> <!--Hébergements à Marseille-->
-                <p>Hébergements à Marseille</p>
+                <p class="titre1">Hébergements à Marseille</p>
                 <div class="containerCards"> 
-                    <div class="card">
+                    <div class="card cardVerticale">
                         <img src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
                         <div class="contentCard">
-                            <h3>Auberge La Canebière</h3>
-                            <p>Nuit à partir de 25€</p>
+                            <a href="#"></a>
+                            <h3 class="cardTitre1">Auberge La Canebière</h3>
+                            <p class="cardTitre2">Nuit à partir de 25€</p>
                             <div>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeGrey"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
+                    <div class="card cardVerticale">
+                        <img src="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Auberge La Canebière">
                         <div class="contentCard">
-                            <h3>Auberge La Canebière</h3>
-                            <p>Nuit à partir de 25€</p>
+                            <a href="#"></a>
+                            <h3 class="cardTitre1">Hôtel du port</h3>
+                            <p class="cardTitre2">Nuit à partir de 52€</p>
                             <div>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeGrey"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
+                    <div class="card cardVerticale">
+                        <img src="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Auberge La Canebière">
                         <div class="contentCard">
-                            <h3>Auberge La Canebière</h3>
-                            <p>Nuit à partir de 25€</p>
+                            <a href="#"></a>
+                            <h3 class="cardTitre1">Hôtel Les mouettes</h3>
+                            <p class="cardTitre2">Nuit à partir de 76€</p>
                             <div>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeGrey"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
+                    <div class="card cardVerticale">
+                        <a href="#"></a>
+                        <img src="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Auberge La Canebière">
                         <div class="contentCard">
-                            <h3>Auberge La Canebière</h3>
-                            <p>Nuit à partir de 25€</p>
+                            <h3 class="cardTitre1">Hôtel de la mer</h3>
+                            <p class="cardTitre2">Nuit à partir de 46€</p>
                             <div>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeGrey"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
+                    <div class="card cardVerticale">
+                        <img src="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge La Canebière">
                         <div class="contentCard">
-                            <h3>Auberge La Canebière</h3>
-                            <p>Nuit à partir de 25€</p>
+                            <a href="#"></a>
+                            <h3 class="cardTitre1">Auberge Le Panier</h3>
+                            <p class="cardTitre2">Nuit à partir de 23€</p>
                             <div>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeGrey"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="card">
-                        <img src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge La Canebière">
+                    <div class="card cardVerticale">
+                        <a href="#"></a>
+                        <img src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Auberge La Canebière">
                         <div class="contentCard">
-                            <h3>Auberge La Canebière</h3>
-                            <p>Nuit à partir de 25€</p>
+                            <h3 class="cardTitre1">Hôtel Chez Amina</h3>
+                            <p class="cardTitre2">Nuit à partir de 96€</p>
                             <div>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
-                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeGrey"></i>
                             </div>
                         </div>
                     </div>
                 </div>
+                <p class="fontFiltre">Afficher plus</p>
             </div>
             <div class="lesPlusPopulaires"> <!--Les plus populaires-->
+                <p class="titre1">Les plus populaires</p>
+                <div class="containerCards">
+                    <div class="card cardHorizontale">
+                        <a href="#"></a>
+                        <img src="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Auberge La Canebière">
+                        <div class="contentCard">
+                            <div>
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de 128€</p>
+                            </div>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeGrey"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card cardHorizontale">
+                        <a href="#"></a>
+                        <img src="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Auberge La Canebière">
+                        <div class="contentCard">
+                            <div>
+                                <h3>Chambres d’hôtes Au cœur de l’eau</h3>
+                                <p>Nuit à partir de 71€</p>
+                            </div>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeGrey"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card cardHorizontale">
+                        <a href="#"></a>
+                        <img src="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Auberge La Canebière">
+                        <div class="contentCard">
+                            <div>
+                                <h3>Hôtel Bleu et Blanc</h3>
+                                <p>Nuit à partir de 68€</p>
+                            </div>
+                            <div>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeBlue"></i>
+                                <i class="fa-sharp fa-solid fa-star fa-xs iconeGrey"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
         </section>
 
+        <section> <!-- Activités-->
+            <p class="titre1">Activités à Marseille</p>
+            <div class="activites">
+                <div class="card cardActivite">
+                    <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
+                    <h3>Vieux-Port</h3>
+                </div>
+                <div class="card cardActivite">
+                    <img src="images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">
+                    <h3>Fort de Pomègues</h3>
+                </div>
+                <div class="card cardActivite">
+                    <img src="images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques">
+                    <h3>Parc national des Calanques</h3>
+                </div>
+                <div class="card cardActivite">
+                    <img src="images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">
+                    <h3>Notre-Dame-de-la-Garde</h3>
+                </div>
+            </div>
+            
+        </section>
 
     </main>
 
     <footer>
+        <div> <!--colonne 1-->
+            <div class="footerTitle">À propos</div>
+            <div>Fonctionnement du site</div>
+            <div>Conditions générales</div>
+            <div>Données et confidentialité</div>
+        </div>
+        <div > <!--colonne 2-->
+            <div class="footerTitle">Nos hébergements</div>
+            <div>Charte qualité</div>
+            <div>Proposer votre hôtel</div>
+        </div>
+        <div > <!--colonne 2-->
+            <div class="footerTitle">Assistance</div>
+            <div>Centre d’aide</div>
+            <div>Nous contacter</div>
+        </div>
 
     </footer>
 
