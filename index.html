@@ -9,25 +9,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <header>
         <nav>
             <img src="images/logo/Booki@3x.png" alt="Booki" title="Logo Booki" id="logo_booki">
-            <div>
-                <a href="#">Hébergements</a>
-                <a href="#">Activités</a>
+            <div class="menu">
+                <div><a href="#">Hébergements</a></div>
+                <div><a href="#">Activités</a></div>
             </div>
         </nav>
     </header>
 
     <main>
-        <section> <!--Formulaire de recherche-->
+        <section class="formSearch"> <!--Formulaire de recherche-->
             <h1 class="titre1">Trouvez votre hébergement pour des vacances de rêve</h1>
             <h2 class="titre2">En plein centre-ville ou en pleine nature</h2>
             <!--Ensemble bouton de recherche-->
-            <form method="get" action="">
+            <form method="get">
                 <div class="iconeLocation"><i class="fa-solid fa-location-dot fa-lg"></i></div>
                 <p>
                     <input type="text" name="lieuRecherche" id="lieuRecherche" size="30" maxlength="20" value="Marseille, France" class="fontSearch">
@@ -37,24 +38,28 @@
             
             </form>
         </section>
-        <section> <!--Filtres-->
+        <section class="filtreSection"> <!--Filtres-->
             <div class="sectionFiltres fontFiltre">
                 <p>Filtres</p>
-                <div class="filtre">
-                    <i class="fa-sharp fa-solid fa-money-bill-wave iconeBlue"></i>
-                    Économique
+                <div class="filtreBloc">
+                    <div class="filtre">
+                        <i class="fa-sharp fa-solid fa-money-bill-wave iconeBlue"></i>
+                        Économique
+                    </div>
+                    <div class="filtre">
+                        <i class="fa-sharp fa-solid fa-person iconeBlue"></i>
+                        Familial
+                    </div>
                 </div>
-                <div class="filtre">
-                    <i class="fa-sharp fa-solid fa-person iconeBlue"></i>
-                    Familial
-                </div>
-                <div class="filtre">
-                    <i class="fa-sharp fa-solid fa-heart iconeBlue"></i>
-                    Romantique
-                </div>
-                <div class="filtre">
-                    <i class="fa-sharp fa-solid fa-dog iconeBlue"></i>
-                    Animaux autorisés
+                <div class="filtreBloc">
+                    <div class="filtre">
+                        <i class="fa-sharp fa-solid fa-heart iconeBlue"></i>
+                        Romantique
+                    </div>
+                    <div class="filtre">
+                        <i class="fa-sharp fa-solid fa-dog iconeBlue"></i>
+                        Animaux autorisés
+                    </div>
                 </div>
             </div>
             <div class="infoDiv titre2">
@@ -223,7 +228,7 @@
         </section>
 
         <section> <!-- Activités-->
-            <p class="titre1">Activités à Marseille</p>
+            <p class="titre1 titreActivite">Activités à Marseille</p>
             <div class="activites">
                 <div class="card cardActivite">
                     <img src="images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">

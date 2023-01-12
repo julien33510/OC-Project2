@@ -18,8 +18,8 @@ main {
 
 /* Header */
 nav {
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     height: 100px;
     padding: 0 20px;
@@ -28,6 +28,11 @@ nav {
 #logo_booki 
 {
     width: auto;
+
+}
+
+.menu {
+    display: flex;
 
 }
 
@@ -163,6 +168,10 @@ form .iconeSearch {
     margin: 0;
 }
 
+.filtreBloc {
+    display: flex;
+    flex-direction: row;
+}
 
 .filtre {
     margin-left: 20px;
@@ -216,7 +225,6 @@ form .iconeSearch {
     display: flex;
     margin-top: 40px;
     justify-content: space-around;
-    /*flex-wrap: wrap;*/
 }
 
 .herbergementMarseille {
@@ -323,6 +331,7 @@ form .iconeSearch {
 
 .contentCard h3 {
     margin: 0;
+    font-size: 1rem;
 }
 
 .contentCard p {
@@ -359,7 +368,8 @@ form .iconeSearch {
 }
 
 .cardActivite h3 {
-    padding-left: 20px;
+    padding-left: 10px;
+    font-size: 1rem;
 }
 
 footer {
@@ -378,11 +388,202 @@ footer div{
 
 
 
-@media all and (min-width: 768px) and (max-width: 992px) {
+@media (max-width: 992px) {
+    .filtre {
+        padding:10px 20px;
+    }
+    .sectionHebergement {
+        flex-direction: column;
+    }
+    .herbergementMarseille {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .herbergementMarseille p{
+        margin: 30px;
+    }
+    .lesPlusPopulaires {
+        margin-top: 30px;
+        width: 100%;
+    }
+    .lesPlusPopulaires p {
+        margin-bottom: 20px;
+    }
+    .lesPlusPopulaires .containerCards {
+        flex-wrap: nowrap;
+        margin-bottom: 20px;
+    }
+    .cardActivite{
+        height: 360px;
+    }
+    .cardActivite img {
+        height: 320px;
+    }
+    .titre1 {
+        font-weight: 800;
+        font-size: 1.1rem;
+    }   
+    .titre2 {
+        font-size: 0.75rem;
+        font-weight: 300;
+    }   
+    .fontSearch {
+        font-size: 0.75rem;
+        font-weight: 600;
+    }   
+    .fontFiltre {
+        font-size: 13px;
+        font-weight: 600;
+    }   
+    .cardTitre1 {
+        font-size: 0.75rem;
+        font-weight: 600;
+    }   
+    .cardTitre2 {
+        font-size: 0.75rem;
+        font-weight: 300;
+    }    
+    .footerTitle {
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .cardActivite h3 {
+        font-size: 0.75rem;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .contentCard h3 {
+       font-size: 0.75rem; 
+    }
+    .contentCard p {
+        font-size: 0.75rem;
+        margin: 4px 0 4px 0;
+    }
+    .cardHorizontale .contentCard p {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .cardVerticale img{
+        height: 90px;
+    }
+    .cardHorizontale img {
+        width: 85px;
+    }
+    footer div {
+        font-size: 0.75rem;
+
+    }
+
 
 }
 
-@media all and (max-width: 768px) {
-
-
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 135px;
+        padding: 0;
+    }
+    nav img {
+        margin-top: 20px;
+        margin-bottom: 37px;
+    }
+    nav div {
+        width: 100%;
+    }
+    nav a {
+        margin: 0;
+        padding-bottom: 25px;
+        padding-left:50px;
+        padding-right: 50px;
+    }
+    nav a:hover {
+        border-bottom: 2px #0065FC solid;
+        border-top:0px;
+    }
+    .menu div {
+        width: 50%;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    .menu div:hover {
+        border-bottom: 2px #0065FC solid;
+    }
+    main {
+        padding: 0;
+    }
+    .formSearch, .filtreSection {
+        padding: 0 20px;
+    }
+    .iconeSearchDesktop {
+        display: none;
+    }
+    .iconeSearchMobile {
+        display: flex;
+    }
+    form {
+        height: 50px;
+    }
+    .fontSearch {
+        height:46px;
+    }
+    .sectionFiltres {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .filtreBloc {
+        margin-top: 15px;
+    }
+    .filtre {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+    .sectionHebergement {
+        flex-direction: column-reverse;
+    }
+    .lesPlusPopulaires {
+        margin-bottom: 20px;
+        border-radius: 0;
+    }
+    .containerCards {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardHorizontale img {
+        width: 110px;
+    }
+    .herbergementMarseille {
+        background-color: white;
+    }
+    .cardVerticale {
+        width:85%;
+    }
+    .cardVerticale img {
+        padding-left: 2px;
+        padding-top: 1px;
+    }
+    .activites {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cardActivite {
+        width: 85%;
+        margin-bottom: 15px;
+        height: 130px;
+    }
+    .cardActivite img {
+        height: 90px;
+    }
+    .cardActivite h3 {
+        padding-left: 10px;
+    }
+    .titreActivite {
+        margin: 30px;
+    }
+    footer {
+        flex-direction: column;
+        padding-left: 30px;
+    }
 }
