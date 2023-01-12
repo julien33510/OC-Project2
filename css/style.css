@@ -105,6 +105,11 @@ h2 {
     margin-bottom: 20px;
 }
 
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 
 /* Search */
@@ -182,6 +187,7 @@ form .iconeSearch {
 
 .filtre:hover{
     background-color: #DEEBFF;
+    cursor: pointer;
 }
 
 .iconeBlue {
@@ -224,20 +230,20 @@ form .iconeSearch {
 .sectionHebergement {
     display: flex;
     margin-top: 40px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .herbergementMarseille {
     background-color:#F2F2F2;
     
-    width: 64%;
+    width: 65%;
     border-radius: 20px;
 }
 
 .lesPlusPopulaires {
     background-color:#F2F2F2;
     
-    width: 32%;
+    width: 33%;
     border-radius: 20px;
 }
 
