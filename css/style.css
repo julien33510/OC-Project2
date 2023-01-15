@@ -1,6 +1,13 @@
 
 /* Général */
 
+:root {
+    --booki-blue: #0065FC;
+    --booki-blue-clear: #DEEBFF;
+    --booki-grey: #F2F2F2;
+    --booki-white: white;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     max-width: 1400px;
@@ -52,8 +59,8 @@ nav a
 }
 
 nav a:hover {
-    color: #0065FC;
-    border-top: 2px #0065FC solid;
+    color: var(--booki-blue);
+    border-top: 2px var(--booki-blue) solid;
 }
 
 /* Font / Titres */
@@ -115,9 +122,10 @@ footer a {
 /* Search */
 
 .iconeLocation {
-    background-color: #F2F2F2;
+    background-color: var(--booki-grey);
     padding: 18px;
     border-radius: 15px 0 0 15px;
+    height: 13px;
 }
 
 form {
@@ -127,27 +135,25 @@ form {
 }
 
 form input {
-    height: 55px;
-    border: 1px  #F2F2F2 solid;
+    height: 45px;
+    border: 1px  var(--booki-grey) solid;
     padding-left: 10px;
 }
 
 form p {
     margin: 0;
     font-weight: 700;
-    
-    
 }
 
 form .iconeSearch {
-    border: 1px #0065FC solid;
+    border: 1px var(--booki-blue) solid;
 } 
 
 .iconeSearch {
     padding: 15px;
     border-radius: 0 15px 15px 0;
-    color: white;
-    background-color: #0065FC;
+    color: var(--booki-white);
+    background-color: var(--booki-blue);
     border: none;
 }
 
@@ -157,7 +163,7 @@ form .iconeSearch {
 
 .iconeSearchDesktop {
     display: flex;
-    height: 59px;
+    height: 49px;
 }
 
 /* Filters */
@@ -181,21 +187,21 @@ form .iconeSearch {
 .filtre {
     margin-left: 20px;
     padding: 10px 30px;
-    border: 2px #F2F2F2 solid;
+    border: 2px var(--booki-grey) solid;
     border-radius: 50px;
 }
 
 .filtre:hover{
-    background-color: #DEEBFF;
+    background-color: var(--booki-blue-clear);
     cursor: pointer;
 }
 
 .iconeBlue {
-    color: #0065FC;
+    color: var(--booki-blue);
 }
 
 .iconeGrey {
-    color: #F2F2F2;
+    color: var(--booki-grey);
 }
 
 .infoDiv {
@@ -211,7 +217,7 @@ form .iconeSearch {
 
 
 .infoCadreIcone {
-    border: 2px #F2F2F2 solid;
+    border: 2px var(--booki-grey) solid;
     padding:5px;
     border-radius: 24px;
     height: 24px;
@@ -234,27 +240,38 @@ form .iconeSearch {
 }
 
 .herbergementMarseille {
-    background-color:#F2F2F2;
+    background-color:var(--booki-grey);
     
     width: 65%;
     border-radius: 20px;
 }
 
 .lesPlusPopulaires {
-    background-color:#F2F2F2;
+    background-color:var(--booki-grey);
     
     width: 33%;
     border-radius: 20px;
 }
 
 .lesPlusPopulaires p {
-    margin: 40px;
+    margin: 0;
+}
     
+.lesPlusPopulairesHead {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 40px 20px 30px;
 }
 
 .herbergementMarseille p {
-    margin: 40px;
+    margin: 40px 40px 20px 30px;
 
+}
+
+.herbergementMarseille p:last-child{
+    margin: 20px 40px 40px 30px;
 }
 
 .containerCards {
@@ -267,7 +284,7 @@ form .iconeSearch {
 
 .card {
     position: relative;
-    background-color: white;
+    background-color: var(--booki-white);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.1s;
     border-radius: 20px;
@@ -362,14 +379,18 @@ form .iconeSearch {
     width: 23%;
     display: flex;
     flex-direction: column;
-    height: 490px;
+    height: 430px;
     
+}
+
+#activites {
+    margin-top: 40px;
 }
 
 .cardActivite img {
     
     object-fit: cover;
-    height: 430px;
+    height: 380px;
     border-radius: 18px 18px 0 0;
 }
 
@@ -379,13 +400,14 @@ form .iconeSearch {
 }
 
 footer {
-    background-color: #F2F2F2;
+    background-color: var(--booki-grey);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 60px;
+    margin: 60px 20px 0 20px;
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-right: 230px;
 
 }
 footer div{
@@ -395,8 +417,25 @@ footer div{
 
 
 @media (max-width: 992px) {
+    .iconeLocation{
+        padding: 10px 15px 15px 15px; 
+    }
+    form input {
+        height: 34px;
+    }
+    .iconeSearchDesktop{
+        height: 38px;
+        padding: 5px 10px;
+    }
     .filtre {
         padding:10px 20px;
+    }
+    .infoCadreIcone {
+        height: 10px;
+        width: 10px;
+    }
+    .infoCadreIcone i {
+        margin: -5px 0 0 0;
     }
     .sectionHebergement {
         flex-direction: column;
@@ -412,7 +451,7 @@ footer div{
         margin-top: 30px;
         width: 100%;
     }
-    .lesPlusPopulaires p {
+    .lesPlusPopulairesHead {
         margin-bottom: 20px;
     }
     .lesPlusPopulaires .containerCards {
@@ -420,17 +459,17 @@ footer div{
         margin-bottom: 20px;
     }
     .cardActivite{
-        height: 360px;
+        height: 275px;
     }
     .cardActivite img {
-        height: 320px;
+        height: 222px;
     }
     .titre1 {
         font-weight: 800;
         font-size: 1.1rem;
     }   
     .titre2 {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
         font-weight: 300;
     }   
     .fontSearch {
@@ -450,7 +489,7 @@ footer div{
         font-weight: 300;
     }    
     .footerTitle {
-        font-size: 0.75rem;
+        font-size: 0.85rem;
         font-weight: 600;
         margin-bottom: 20px;
     }
@@ -477,10 +516,11 @@ footer div{
         width: 85px;
     }
     footer div {
-        font-size: 0.75rem;
-
+        font-size: 0.85rem;
     }
-
+    footer {
+        padding-right:130px;
+    }
 
 }
 
@@ -505,7 +545,7 @@ footer div{
         padding-right: 50px;
     }
     nav a:hover {
-        border-bottom: 2px #0065FC solid;
+        border-bottom: 2px var(--booki-blue) solid;
         border-top:0px;
     }
     .menu div {
@@ -514,13 +554,17 @@ footer div{
         padding-bottom: 25px;
     }
     .menu div:hover {
-        border-bottom: 2px #0065FC solid;
+        border-bottom: 2px var(--booki-blue) solid;
     }
     main {
         padding: 0;
     }
     .formSearch, .filtreSection {
         padding: 0 20px;
+    }
+    .iconeLocation{
+        padding: 16px 15px 15px 15px;
+        height: 19px;
     }
     .iconeSearchDesktop {
         display: none;
@@ -559,9 +603,10 @@ footer div{
     }
     .cardHorizontale img {
         width: 110px;
+        margin: 5px 0 5px 5px;
     }
     .herbergementMarseille {
-        background-color: white;
+        background-color: var(--booki-white);
     }
     .cardVerticale {
         width:85%;
@@ -577,10 +622,10 @@ footer div{
     .cardActivite {
         width: 85%;
         margin-bottom: 15px;
-        height: 130px;
+        height: 160px;
     }
     .cardActivite img {
-        height: 90px;
+        height: 120px;
     }
     .cardActivite h3 {
         padding-left: 10px;
