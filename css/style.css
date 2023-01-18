@@ -26,6 +26,7 @@ main {
 /* Header */
 nav {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: 100px;
@@ -279,7 +280,6 @@ form .iconeSearch {
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: space-around;
-
 }
 
 .card {
