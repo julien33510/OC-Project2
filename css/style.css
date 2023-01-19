@@ -266,12 +266,12 @@ form .iconeSearch {
     margin: 40px 40px 20px 30px;
 }
 
-.herbergementMarseille p {
+.herbergementMarseille h2 {
     margin: 40px 40px 20px 30px;
 
 }
 
-.herbergementMarseille p:last-child{
+.herbergementMarseille p {
     margin: 20px 40px 40px 30px;
 }
 
@@ -443,6 +443,9 @@ footer div{
     .herbergementMarseille {
         width: 100%;
         justify-content: space-evenly;
+    }
+    .herbergementMarseille h2 {
+        margin: 30px;
     }
     .herbergementMarseille p{
         margin: 30px;
